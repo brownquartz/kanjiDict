@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-
+import pymysql
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'Python_kanjiDictionary.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'kanjiDict',
-        'USER': 'root', 
-        'PASSWORD':'',
-        'HOST': '127.0.0.1',
+        'NAME': 'kanji_dictionary',
+        'USER': 'park', 
+        'PASSWORD':'f6472262',
+        'HOST': 'database-1.cqth3hqjmtrf.us-east-2.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
